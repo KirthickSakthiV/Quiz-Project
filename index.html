@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "stylesheet" href = "main.css">
+</head>
+<body class = "flex">
+    <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+    </div >
+    
+        <div class="start_btn"><button>Start Quiz</button></div>
+
+    <div id="displayStart">
+    
+    <audio src="wrong.mp3" id="Wrongaudio"></audio>
+    <audio src="answer.wav" id="Answeraudio"></audio>
+    
+    <div class = "wrapper">
+        <div class = "quiz-container">
+            <div class = "quiz-head">
+                <h1 class = "quiz-title">Quiz Game</h1>
+                <div class="flexrowside">
+                    <div class="timer ">
+                        <div >Score</div>
+                        <div id="score">0</div>
+                    </div>
+                    <div class = "quiz-score flex">
+                        <span id = "correct-score"></span>/<span id = "total-question"></span>
+                        
+                    </div>
+                    <div class="timer ">
+                        <div class="time_left_txt">Time Left</div>
+                        <div class="timer_sec">15</div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class = "quiz-body">
+                    
+                
+                <h2 class = "quiz-question" id = "question"><!--What is the full form of HTTP? --></h2>
+                
+                <ul class = "quiz-options">
+                    <!-- <li>1. Hyper text transfer package</li>
+                    <li>2. Hyper text transfer protocol</li>
+                    <li>3. Hyphenation text test program</li>
+                    <li>4. None of the above</li> -->
+                </ul>
+                <div id="result">
+                    
+                </div>
+            </div>
+            <div class = "quiz-foot">
+                <button type = "button" id = "check-answer">Check Answer</button>
+                <button type = "button" id = "play-again">Play Again!</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+    <script src = "script.js"></script>
+</body>
+</html>
